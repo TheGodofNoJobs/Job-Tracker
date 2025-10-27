@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Assistant Job Tracker</h1>
+        <p>This dashboard helps you track the status of your automated job applications.</p>
+        
+        <div class="controls">
+            <label for="statusFilter">Filter by Status:</label>
+            <select id="statusFilter">
+                <option value="">All Statuses</option>
+                <option value="New">New</option>
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Rejected">Rejected</option>
+                <option value="Hired">Hired</option>
+            </select>
+        </div>
+
+        <table id="jobTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                    <th>Source</th>
+                    <th>Applied Date</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here by script.js -->
+            </tbody>
+        </table>
+        
+        <p class="footer">Data loaded from job_applications_log.csv. To update, replace the CSV file and refresh the page.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

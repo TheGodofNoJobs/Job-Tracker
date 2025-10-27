@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#statusFilter {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#jobTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#jobTable th, #jobTable td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#jobTable thead th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /* For future sorting feature */
+}
+
+#jobTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#jobTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status coloring */
+.status-Applied { background-color: #d4edda; color: #155724; } /* Greenish */
+.status-New { background-color: #fff3cd; color: #856404; } /* Yellowish */
+.status-Interview { background-color: #d1ecf1; color: #0c5460; } /* Bluish */
+.status-Rejected { background-color: #f8d7da; color: #721c24; } /* Reddish */
+.status-Hired { background-color: #cce5ff; color: #004085; } /* Lighter Blue */
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #777;
+}
