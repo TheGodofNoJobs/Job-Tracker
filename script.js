@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const logFile = '..job_applications_log.csv';
+    const logFile = 'job_applications_log.csv';
     const jobTableBody = document.querySelector('#jobTable tbody');
     const statusFilter = document.getElementById('statusFilter');
     let allJobs = [];
